@@ -121,15 +121,63 @@ header ul li a:hover:after {
 }
 .carousel-title {
   text-align: center;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  width: 700px;
+  height: 400px;
+  overflow: hidden;
 }
-.carousel-nav {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.middle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
+}
+.multi-slides {
+  position: absolute;
+  display: flex;
+  width: 400%;
+  height: 100%;
+}
+.nav-title {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  margin-bottom: 100px;
+}
+.bar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid #fff;
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+.bar:hover {
+  background-color: #fff;
+}
+input[name="radio-slider"] {
+  position: absolute;
+  visibility: hidden;
+}
+.slide {
+  width: 100%;
+  transition: 0.5s;
+}
+.sl-block {
+  width: 700px;
+}
+
+#slider01:checked ~ .sl1 {
+  margin-left: 0%;
+}
+#slider02:checked ~ .sl1 {
+  margin-left: -25%;
+}
+#slider03:checked ~ .sl1 {
+  margin-left: -50%;
+}
+#slider04:checked ~ .sl1 {
+  margin-left: -75%;
 }
