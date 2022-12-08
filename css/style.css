@@ -34,7 +34,8 @@ button {
   margin-top: 50px;
 }
 h1 {
-  font-family: "Comfortaa";
+  letter-spacing: 10px;
+  font-family: "Coco";
   font-size: 50px;
   text-transform: uppercase;
 }
@@ -146,7 +147,7 @@ header ul li a:hover:after {
 .carousel-title {
   text-align: center;
   width: 700px;
-  height: 400px;
+  height: 300px;
   overflow: hidden;
 }
 .middle {
